@@ -44,8 +44,8 @@ function time(){
   }
   setInterval(time,1000)
   //-----------------点击分类跳转分类页面——--------------------
-  var skip = document.getElementById("skip");
-  skip.onclick = function(){
+  var Bot= document.getElementById("Bot");
+  Bot.onclick = function(){
     self.location = "list.html";
   }
    //-----------------点击购物车跳转购物车页面——--------------------
