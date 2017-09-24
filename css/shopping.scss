@@ -1,0 +1,322 @@
+@function cal($num){
+	@return $num/20;
+}
+$font:"iconfont";
+@mixin color{
+	color:#5e5e5e;
+}
+html,body{
+	height:100%;
+	background: #f6f6f6;
+}
+#layout-title{
+	width:cal(320rem);
+	.border{
+		width: cal(320rem);
+		height: cal(37rem);
+		border-bottom:1px solid #c9c7c8;
+		background: #fafafa;
+		span{
+			font-family:$font;
+			margin-left:cal(2rem);
+			font-weight: bold;
+			float:left;
+			display:block;
+			margin-top: cal(10rem);
+		}
+		p{  
+			text-align:center;
+			font-size:cal(16rem);
+			line-height:cal(37rem);	
+			@include color;
+		}
+		.password{
+			clear: both;
+			float:right;
+			font-size:cal(11rem);
+			display:block;
+			font-weight:normal;
+			margin-top:cal(-28rem);
+			margin-right: cal(5rem);
+			@include color;	
+			span{
+				@include color;
+				font-family:$font;
+				float: right;
+				margin-left:cal(10rem);
+				margin-top: cal(5rem);
+			}
+		}
+	}
+}
+#layout-center{
+	.border{
+		width: cal(320rem);
+		height: cal(32rem);
+		margin-top: cal(20rem);
+		border-top:1px solid #c9c7c8;
+		border-bottom:1px solid #c9c7c8;
+		background: #fafafa;
+		font-size: cal(12rem);
+		.bag{
+			.fat{
+				margin-top: cal(10rem);
+				font-size: cal(11rem);
+				margin-left: cal(10rem);
+				float: left;
+				@include color;
+
+			}
+			
+			span{
+				font-family:$font;
+				margin-left:cal(10rem);
+				margin-top: cal(10rem);
+				float:left;
+				display:block;
+				font-size:cal(17rem);
+				color:#e3e3e3;
+			}
+			.select{
+				font-family:$font;
+				color: #ff5577;
+				position:fixed;
+				left:cal(0rem);
+				top:cal(60rem); 
+				display: none;
+				
+			}
+		}
+		.password{
+			float:right;
+			font-size:cal(12rem);
+			display:block;
+			font-weight:normal;
+			margin-top: cal(10rem);
+			@include color;
+			font-family:$font;
+
+		}
+	}
+	.shopping{
+		width:cal(320rem);
+		height:cal(110rem);
+		border-bottom:1px solid #c9c7c8;
+		span{
+			font-family:$font;
+			float: left;
+			margin-top: cal(45rem);
+			color:#e3e3e3;
+			margin-left: cal(10rem);
+
+		}
+		.sele{
+
+			font-family: $font;
+			margin-top: cal(45rem);
+			color: #e3e3e3;
+			margin-left: cal(-20rem);
+			color: #ff5577;
+			display: none;
+		}
+		img{
+			width:cal(57rem);
+			height: cal(82rem);
+			margin-left: cal(16rem);
+			margin-top: cal(12rem);
+			float:left;
+		}
+		.Y{
+			font-size: cal(12rem);
+			float:left;
+			display: block;
+			margin-left: cal(8rem);
+			font-weight: bold;
+			margin-top: cal(14rem);	
+
+
+		}
+		.Y1{
+			float: left;
+			margin-left:cal(8rem);
+			margin-top: cal(0rem);
+			font-size: cal(12rem);	
+		}
+		.Y2{
+			float:left;
+			margin-left:cal(8rem);
+			margin-top: cal(2rem);	
+			font-weight:normal;
+			color: #999;
+			font-size: cal(12rem);
+		}
+		.include{
+			clear:both;
+			.Y3{
+				
+				float:left;
+				display:block;
+				font-size: cal(13rem);
+				margin-left: cal(110rem);
+				margin-top: cal(-20rem);
+			}
+			del{
+				float: right;
+				font-size: cal(13rem);
+				margin-right: cal(105rem);
+				margin-top: cal(-20rem);
+				color: #999;
+			}
+			
+		}
+		.Y4{
+			font-size: cal(9rem);
+			float: right;
+			margin-top: cal(-18rem);
+			margin-right: cal(7rem);
+			color: #999;	
+		}
+		
+	}
+	
+}
+#layout-footer{
+	width:cal(320rem);
+	height:cal(42rem);
+	border:1px solid #c9c7c8;
+	border-left:none;
+    position:fixed;
+    background: #fff;
+	bottom:0;
+	left:0;
+	.all{
+		span{
+			display: block;
+			font-family:$font;
+			float:left;
+			margin-top: cal(15rem);
+			color:#e3e3e3;
+			margin-left: cal(10rem);
+			font-size: cal(12rem);
+		}
+		.chec{
+			clear: both;
+			display:block;
+			position:fixed;
+			left:cal(0rem);
+			bottom:cal(15rem);
+			color:#ff5777; 
+			display:none;
+		}
+		p{
+			float: left;
+			font-size: cal(11rem);
+			margin-left: cal(10rem);
+			margin-top: cal(15rem);
+			@include color;
+		}
+		.money{
+			float:left;
+			color:#ff5777;
+			font-size: cal(12rem);
+		}
+	}
+	input{
+		width: cal(88rem);
+		height: cal(29rem);
+		background: #ff5777;
+		color: #fff;
+		float: right;
+		border:1px solid #ff5777;
+		margin-top: cal(9rem);
+		margin-right:cal(3rem);
+		font-size: cal(13rem);
+	}
+}
+#all-shadow{
+	width: 100%;
+	height:100%;
+	opacity:0.5;
+	filter: alpha(opacity=20);
+	background:black;
+	display:none;
+	position: fixed;
+	top:0;
+	left:0;
+}
+#store{
+	width: cal(320rem);
+	height: cal(280rem);
+	background:#fff;
+	position: fixed;
+	bottom:0;
+	left:0;
+	display: none;
+	p{
+	
+		font-size: cal(14rem);
+		margin-left: cal(110rem);
+		margin-top: cal(15rem);
+		color: #a2a2a2;
+		
+	}
+	.point{
+			float: right;
+			display: block;
+			font-family: $font;
+			margin-right: cal(10rem);
+			margin-top: cal(-15rem);
+			font-size: cal(12rem);
+			color: #a2a2a2;
+		}
+	.line{
+		width: cal(320rem);
+		height: cal(86rem);
+		border-top:1px solid #eee;
+		border-bottom:1px solid #eee;
+		margin-top: cal(10rem);
+		.cash{
+			display: block;
+			margin-left:cal(20rem);
+			margin-top: cal(10rem);
+			float:left;
+			color: #ff5577;
+		}
+		.infor{
+			clear: both;
+			display: block;
+			font-size: cal(10rem);
+			color: #666;
+			margin-left: cal(20rem);
+		}
+		.date{
+			display: block;
+			font-size: cal(10rem);
+			color: #999;
+			margin-top: cal(0rem);
+			margin-left: cal(20rem)
+		}
+		.draw{
+			height: cal(27rem);
+			width: cal(70rem);
+			border:1px solid #ff5577;
+			float:right;
+			margin-top: cal(-50rem);
+			margin-right: cal(15rem);
+			color: #ff5577;
+			line-height: cal(27rem);
+			text-align: center;
+			font-size: cal(14rem);
+		}
+	}
+	.line1{
+		border-top:none;
+		border-bottom: none;
+		margin-top: cal(-15rem);
+		.cash{
+			margin-top: cal(20rem);
+		}
+
+	}
+	
+}

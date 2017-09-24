@@ -1,0 +1,173 @@
+@function cal($num){
+	@return $num/20;
+}
+$font:"iconfont";
+@mixin color{
+	color:#5e5e5e;
+}
+html,body{
+	height:100%;
+}
+#layout-title{
+	width:cal(320rem);
+	.border{
+		width: cal(320rem);
+		height: cal(37rem);
+		border-bottom:1px solid #c9c7c8;
+		background: #fafafa;
+		span{
+			font-family:$font;
+			margin-left:cal(2rem);
+			font-weight: bold;
+			float:left;
+			display:block;
+			margin-top: cal(10rem);
+		}
+		p{  
+			text-align:center;
+			font-size:cal(16rem);
+			line-height:cal(37rem);	
+		}
+		.password{
+			float:right;
+			font-size:cal(14rem);
+			display:block;
+			font-weight:normal;
+			margin-top:cal(-33rem);
+			margin-right: cal(3rem);
+			color: #999;
+		}
+	}
+}
+#layout-center{
+	width:cal(320rem);
+	p{
+		margin-left:cal(125rem);
+		margin-top:cal(45rem);
+		font-size:cal(13rem);
+		@include color;
+
+	}
+	.text{
+		width:cal(320rem);
+		height:cal(36rem);
+		margin-top: cal(14rem);
+		border-bottom:1px solid #edeef1;
+
+		input{
+		width:cal(320rem);
+		height:cal(36rem);
+		@include color;
+		border:none;
+		outline:none;
+		text-align: center;
+		line-height: cal(36rem);
+		font-size: cal(24rem);
+		color: #edeef1;
+		}
+	}
+	.password{
+		margin-left:cal(140rem);
+		margin-top:cal(19rem);
+		font-size:cal(13rem);
+		@include color;
+
+	}
+	.password1{
+		width:cal(320rem);
+		height:cal(36rem);
+		margin-top: cal(14rem);
+		border-bottom:1px solid #edeef1;
+		input{
+		width:cal(320rem);
+		height:cal(36rem);
+		@include color;
+		border:none;
+		outline:none;
+		text-align: center;
+		line-height: cal(36rem);
+		font-size: cal(24rem);
+		color:#edeef1;
+		}
+	}
+	.button{
+		margin-top: cal(19rem);
+		margin-left: cal(14rem);
+		input{
+			width: cal(296rem);
+			height: cal(44rem);
+			background:#ff1877;
+			color: #fff;
+			border:1px solid #ff1877;
+			font-size: cal(16rem);
+
+		}
+	}
+}
+#layout-footer{
+	width:cal(320rem);
+	p{
+		font-size:cal(13rem);
+		float:left;
+		margin-left:cal(12rem);
+		margin-top: cal(14rem);
+		color: #999;
+		margin-bottom: cal(43rem);
+	}
+	.res{
+		float:right;
+		margin-right:cal(12rem);
+		margin-top:cal(14rem);
+		color:#ff5777;
+	}
+	.line{
+		overflow:hidden;
+		clear:both;
+		width:cal(110rem);
+		height:cal(1rem);
+		background:#edeef1;
+		margin-left:cal(20rem);
+	}
+	.line1{
+		margin-top: cal(20rem);
+	}
+	span{
+		text-align:center;
+		margin-top:cal(-30rem);
+		display:block;
+		font-size: cal(12rem);
+		color: #edeef1;
+
+	}
+	.img{
+		margin-left: cal(105rem);
+		margin-top: cal(20rem);
+		img{
+		width:50%;
+
+		}
+	}
+	
+}
+#shadow{
+	width: 100%;
+	height:100%;
+	opacity:0.5;
+	filter: alpha(opacity=20);
+	background:black;
+	display:none;
+	position: fixed;
+	top:0;
+	left:0;
+}
+#erweima{
+	position: fixed;
+	top:cal(60rem);
+	left:cal(40rem);
+	display: none;
+	img{
+		width: cal(250rem);
+		height: cal(400rem);
+		
+	}
+}

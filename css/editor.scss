@@ -1,0 +1,341 @@
+@function cal($num){
+	@return $num/20;
+}
+$font:"iconfont";
+@mixin color{
+	color:#5e5e5e;
+}
+html,body{
+	height:100%;
+	background: #f6f6f6;
+}
+#layout-title{
+	width:cal(320rem);
+	.border{
+		width: cal(320rem);
+		height: cal(37rem);
+		border-bottom:1px solid #c9c7c8;
+		background: #fafafa;
+		span{
+			font-family:$font;
+			margin-left:cal(2rem);
+			font-weight: bold;
+			float:left;
+			display:block;
+			margin-top: cal(10rem);
+		}
+		p{  
+			text-align:center;
+			font-size:cal(16rem);
+			line-height:cal(37rem);	
+			@include color;
+		}
+		.password{
+			clear: both;
+			float:right;
+			font-size:cal(12rem);
+			display:block;
+			font-weight:normal;
+			margin-top:cal(-28rem);
+			margin-right: cal(10rem);
+			@include color;	
+		}
+	}
+}
+#layout-center{
+	.border{
+		width: cal(320rem);
+		height: cal(32rem);
+		margin-top: cal(20rem);
+		border-top:1px solid #c9c7c8;
+		border-bottom:1px solid #c9c7c8;
+		background: #fafafa;
+		font-size: cal(12rem);
+		.bag{
+			.fat{
+				margin-top: cal(10rem);
+				font-size: cal(11rem);
+				margin-left: cal(10rem);
+				float: left;
+				@include color;
+
+			}
+			
+			span{
+				font-family:$font;
+				margin-left:cal(10rem);
+				margin-top: cal(10rem);
+				float:left;
+				display:block;
+				font-size:cal(17rem);
+				color:#e3e3e3;
+			}
+		}
+		.password{
+			float:right;
+			font-size:cal(12rem);
+			display:block;
+			font-weight:normal;
+			margin-top: cal(10rem);
+			@include color;
+			font-family:$font;
+		}	
+	}
+	.shopping{
+		width:cal(320rem);
+		height:cal(110rem);
+		border-bottom:1px solid #c9c7c8;
+		span{
+			font-family:$font;
+			float: left;
+			margin-top: cal(45rem);
+			color:#e3e3e3;
+			margin-left: cal(10rem);
+
+		}
+		img{
+			width:cal(57rem);
+			height: cal(82rem);
+			margin-left: cal(16rem);
+			margin-top: cal(12rem);
+			float:left;
+		}
+		.sub{
+			width: cal(38rem);
+			height: cal(24rem);
+			float: left;
+			margin-top: cal(30rem);
+			margin-left: cal(10rem);
+			line-height: cal(24rem);
+			text-align: center;
+		}
+		.sub1{
+			background: #f6f6f6;
+			color: #999;
+			border:1px solid #e5e5e5;
+			border-right:1px solid #999;
+			font-weight:bold;
+		}
+		.sub2{
+			margin-left:cal(0rem);
+			font-size: cal(11rem);
+			color: #5e5e5e;
+			border:1px solid #999;
+
+		}
+		.sub2{
+			margin-left: cal(0rem);
+			border-left:none;
+			font-weight:bold;
+		}
+		.color{
+			float: right;
+			width: cal(200rem);
+			height: cal(37rem);
+			border:1px solid #999;
+			margin-top:cal(10rem);
+			margin-right:cal(5rem);
+			font-size: cal(13rem);
+			span{
+				display: block;
+				margin-left: cal(10rem);
+				margin-top: cal(10rem);
+				color: #666;
+
+			}
+			.size{
+				float: right;
+				display: block;		
+				font-family: $font;
+				clear: both;
+				margin-top: cal(-15rem);
+				margin-right: cal(10rem);
+			}
+		}	
+	}
+}
+#all-sha{
+	width: 100%;
+	height:100%;
+	opacity:0.5;
+	filter: alpha(opacity=20);
+	background:black;
+	display:none;
+	position: fixed;
+	top:0;
+	left:0;
+}
+
+#white{
+	width: cal(320rem);
+	height: cal(400rem);
+	background:#fff;
+	position:fixed;
+	bottom:0;
+	z-index:3;
+	left:0;
+	display:none;
+
+	img{
+		width: cal(80rem);
+		height: cal(100rem);
+		float:left;
+		margin-top: cal(0rem);
+	}
+	.goods-cont{
+		display: block;
+		padding-top: cal(20rem);
+		font-size: cal(10rem);
+		float: left;
+	}
+	.white-font{
+		font-size: cal(20rem);
+		float: left;
+		display: block;
+		padding-top: cal(20rem);
+	}
+	.down{
+			width:cal(20rem);
+			height:cal(20rem);
+			font-family: $font;
+			line-height:cal(20rem);
+			text-align:center;
+			display: block;
+			float: right;
+			color: #a1a1a1;
+			float: right;
+			margin-right:cal(20rem);
+			margin-top: cal(25rem);
+		}
+	.stock{
+		font-size: cal(10rem);
+		display: block;
+		padding-top:cal(50rem);
+		color: #7b7b7b;
+	}
+	#sel{
+			float: left;
+			display: block;
+			font-size:cal(12rem);
+			color: #333;
+		}
+
+	.stock1{
+		float: left;
+		display: block;
+		margin-top: cal(-50rem);
+		color: #333;
+		
+	}
+	.color{
+		clear: both;
+		font-size: cal(13rem);
+		color: #5e5e5e;
+	}
+	.black-border{
+		li{
+			width: cal(186rem);
+			height: cal(22rem);
+			border:1px solid #bbbbbb;
+			font-size: cal(12rem);
+			color: #9f9f9f;
+			margin-top:cal(10rem);
+		}
+	}
+	.color1{
+		margin-top: cal(30rem);
+	}
+	.num-border{
+		display: block;
+		width: cal(29rem);
+		height: cal(23rem);
+		border:1px solid #bbb;
+		float: left;
+		border-right: none;
+		line-height: cal(23rem);
+		text-align:center;
+		margin-bottom: cal(10rem);
+		color: #7b7b7b;
+		font-size: cal(11rem);
+	}
+	.num-border1{
+		border-right:1px solid #bbb;
+		color: #ed4566;
+	}
+	.include{
+		clear: both;
+		.sure{
+			display: block;
+			width: cal(93rem);
+			height: cal(27rem);
+			background:#ff5577;
+			line-height: cal(27rem);
+			text-align: center;
+			margin-left: cal(110rem);
+			margin-top:cal(100rem);
+			color: #fff;
+			font-size: cal(12rem);
+			border-radius: 5%;
+		}
+	}		
+}
+#layout-footer{
+	width:cal(320rem);
+	height:cal(42rem);
+	border:1px solid #c9c7c8;
+	border-left:none;
+    position:fixed;
+    background: #fff;
+	bottom:0;
+	left:0;
+	.all{
+		span{
+			display: block;
+			font-family:$font;
+			float:left;
+			margin-top: cal(10rem);
+			color:#e3e3e3;
+			margin-left: cal(10rem);
+			font-size: cal(12rem);
+
+		}
+		p{
+			float: left;
+			font-size: cal(11rem);
+			margin-left: cal(10rem);
+			margin-top: cal(15rem);
+			@include color;
+		}
+		.money{
+			float:left;
+			color:#ff5777;
+			font-size: cal(12rem);
+			float:left;
+		}
+	}
+	input{
+		clear: both;
+		width: cal(70rem);
+		height: cal(29rem);
+		background: #ff5777;
+		color: #fff;
+		margin-left: cal(130rem);
+		border:1px solid #ff5777;
+		border-radius: 5%;
+		margin-top: cal(9rem);
+		font-size: cal(13rem);
+	}
+	.tibet{
+		clear: both;
+		width: cal(75rem);
+		height:cal(25rem);
+		border:1px solid #ff5777;
+		color:#ff5777;
+		font-size: cal(10rem);
+		float:right;
+		margin-top: cal(-20rem);
+		line-height: cal(25rem);
+		text-align: center;
+		margin-right: cal(80rem);
+	}
+}

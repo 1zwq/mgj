@@ -1,0 +1,188 @@
+@function cal($num){
+	@return $num/20;
+}
+$font:"iconfont";
+@mixin color{
+	color:#999;
+}
+html,body{
+	height:100%;
+}
+ul li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+#layout-title{
+	width:cal(320rem);
+	.border{
+		width:cal(320rem);
+		height: cal(37rem);
+		border-bottom:1px solid #c9c7c8;
+		background: #fafafa;
+		span{
+			font-family:$font;
+			margin-left:cal(2rem);
+			font-weight: bold;
+			float:left;
+			display:block;
+			margin-top: cal(10rem);
+		}
+		p{  
+			text-align:center;
+			font-size:cal(16rem);
+			line-height:cal(37rem);	
+			@include color;
+		}
+		.password{
+			clear: both;
+			float:right;
+			font-size:cal(14rem);
+			display:block;
+			font-weight:normal;
+			margin-top:cal(-28rem);
+			margin-right: cal(10rem);
+			@include color;	
+		}
+	}
+	.meili{
+		width: cal(300rem);
+		height:cal(90rem);
+		border:1px solid #d1d1d1;
+		margin-left: cal(10rem);
+		margin-top: cal(12rem);
+		box-shadow: 0px 5px 5px #d1d1d1;
+
+	}
+	.name{
+		display: block;
+		font-size: cal(13rem);
+		float: left;
+		color: #424242;
+		margin-left: cal(10rem);
+		margin-top: cal(5rem);
+	}
+	.phone{
+		font-size: cal(9rem);
+		margin-left: cal(10rem);
+	}
+	.card{
+		font-size: cal(12rem);
+		color: #727272;
+		margin-left: cal(10rem);
+
+	}
+	.line{
+		width: cal(300rem);
+		height: cal(1rem);
+		background: #eaeaea;
+		margin-top: cal(10rem);
+	}
+	.ico{
+		display: block;
+		font-family: $font;
+		color: #d8d9da;
+		margin-top: cal(5rem);
+		margin-left: cal(10rem);
+		float: left;
+	}
+	.agree{
+		float:left;
+		font-size:cal(12rem);
+		margin-top: cal(6rem);
+		margin-left: cal(10rem);
+		color: #5e5e5e;
+	}
+	.ico1{
+		margin-left: cal(70rem);
+		display: block;
+		color: #f57f99;
+	}
+	.ico2{
+		margin-left: cal(20rem);
+		display: block;
+		color: #f57f99;
+	}
+	
+}
+#all-sha{
+	width: 100%;
+	height:100%;
+	opacity:0.5;
+	filter: alpha(opacity=20);
+	background:black;
+	display:none;
+	position: fixed;
+	top:0;
+	left:0;
+}
+#delect{
+	width:cal(224rem);
+	height:cal(79rem);
+	background:#fff;
+	border-radius:3%;
+	display:none;
+	position:fixed;
+	left:cal(45rem);
+	top:cal(200rem);
+	p{
+		display: block;
+		font-size: cal(12rem);
+		color: #999;
+		margin-left: cal(45rem);
+		padding-top: cal(8rem);
+	}
+	.line{
+		width:cal(224rem);
+		height: cal(1rem);
+		background:#eee;
+		margin-top: cal(10rem);
+	}
+	.true{
+		width: cal(110rem);
+		height: cal(43rem);
+		border:1px solid #eee;
+		margin-top: cal(0rem);
+		border-top:none;
+		border-bottom: none;
+		float:left;
+		border-right:none;
+		font-size: cal(13rem);
+		line-height:cal(43rem);
+		text-align: center;
+		color: #999;
+	}
+	.true1{
+		color:#ff557a;
+	}
+}
+#appen{
+	display: none;
+	img{
+		width:cal(219rem);
+		height: cal(119rem);
+		margin-left: cal(50rem);
+		margin-top: cal(60rem);
+
+	}
+	p{
+		display: block;
+		margin-top: cal(20rem);
+		margin-left: cal(70rem);
+		font-size:cal(16rem);
+		color: #999;
+	}
+	.vue-base{
+		width: cal(85rem);
+		height: cal(29rem);
+		color:#fff;
+		line-height: cal(29rem);
+		text-align: center;
+		background:#ff557a;
+		font-size: cal(13rem);
+		margin-left: cal(120rem);
+		margin-top: cal(20rem);
+		border-radius:5%;
+	}
+}
